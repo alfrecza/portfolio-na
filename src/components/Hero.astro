@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../assets/img/naLogo.png'
+---
+
+<section class="banner">
+    <div class="container mx-auto">
+        <div class="flex items-center gap-36">
+            <div class="w-3/5">
+                <span class="tagline">Welcome to my PortFolio</span>
+                <h1 class="text-white block">Hi! We are Nico and Alfre. <span>Developers and designers</span></h1>
+                <p class="text-lg text-gray-200 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem nihil. Ipsam ab quis dolores aut sapiente alias voluptates quod consectetur hic consequatur, enim dolor, cupiditate in voluptate nihil obcaecati reiciendis? Consectetur.</p>
+                <button class="font-bold uppercase text-bold text-xl text-white mt-3">Contactanos  --></button>
+            </div>
+            <div class="w-2/5">
+                <Image src={Logo} alt='Imagen Logo' class=' rounded-full logo'/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .banner {
+        padding: 180px 0 120px 0;
+    }
+
+    .banner h1 {
+        font-size: 65px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        line-height: 1;
+        margin-bottom: 20px;
+        margin-top: 1rem;
+    }
+
+    .banner .logo {
+        animation: ;
+    }
+
+    .tagline {
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        padding: 8px 10px;
+        background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+        display: inline-block;
+        color: white;
+    }
+
+    img {
+        width: 80%;
+    }
+    
+</style>

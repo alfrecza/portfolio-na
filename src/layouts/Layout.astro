@@ -1,0 +1,48 @@
+---
+interface Props {
+  title: string;
+}
+
+import Header from '../components/Header.astro';
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+
+<style is:global>
+  @font-face {
+    font-family: Centra;
+    src: url("../assets/font/CentraNo2-Bold.ttf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: Centra;
+    src: url("../assets/font/CentraNo2-Medium.ttf");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: Centra;
+    src: url("../assets/font/CentraNo2-Book.ttf");
+    font-weight: 400;
+  }
+  html {
+    font-family: Centra;
+    background: #13151a;
+    background-size: 224px;
+  }
+</style>
