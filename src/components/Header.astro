@@ -3,19 +3,9 @@ import NavBar from "./NavBar.astro";
 import Hero from "./Hero.astro";
 ---
 
-<header >
-    <div class="container mx-auto">
+<header class="bg-[url('../banner-bg.png')] bg-cover bg-no-repeat bg-top">
+    <div class="container mx-auto ">
         <NavBar/>
         <Hero/>
     </div>
 </header>
-
-<style>
-    header{
-        background-image: url(../assets/img/banner-bg.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
-</style>
