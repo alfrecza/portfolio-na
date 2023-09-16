@@ -3,76 +3,30 @@ import { Image } from 'astro:assets';
 import imagenProyecto from '../assets/img/548shots_so.png'
 ---
 
-<section class="proyectos relative">
+<section class="relative bg-[#101010] pb-16">
     <div class="container mx-auto ">
         <div class="flex flex-col items-center ">
-            <div class="proyectos-box">
-                <h2 class="font-bold">Proyectos</h2>
-                <p class="font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, unde.
+            <div class="proyectos-box bg-[#151515] rounded-[64px] text-center py-[60px] px-[50px] mt-[-60px]">
+                <h2 class="font-bold text-5xl pb-5">Proyectos</h2>
+                <p class="font-semibold text-lg tracking-wide leading-6 mt-3.5 mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, unde.
                     <br>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, Lorem ipsum dolor sit amet consectetur.
-                </p>
-                
+                </p>                
                 <div class="contenedor-proyectos flex gap-5">
                     <div>
-                        <Image class=' rounded-md' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>
-                        <a class="uppercase font-bold text-white" href="">View proyect</a>
+                        <Image class='rounded-md max-w-xs' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-8 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>
                     </div>
                     <div>
-                        <Image class=' rounded-md' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>  
-                        <a class="uppercase font-bold text-white" href="">View proyect</a>                     
+                        <Image class='rounded-md max-w-xs' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>  
+                        <a class="block w-4/5 mx-auto mt-8 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>                     
                     </div>
                     <div>
-                        <Image class=' rounded-md' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>
-                        <a class="uppercase font-bold text-white" href="">View proyect</a>
+                        <Image class='rounded-md max-w-xs' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-8 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>
                     </div>
-                </div>
-                
-            </div>
-            
+                </div>                
+            </div>            
         </div>
     </div>
 </section>
-
-<style>
-    .proyectos {
-        background-color: #101010;
-        padding: 0 0 50px 0;
-    }
-
-    .proyectos-box {
-        background-color: #151515;
-        border-radius: 64px;
-        text-align: center;
-        padding: 60px 50px;
-        margin-top: -60px;
-    }
-
-    .proyectos-box h2 {
-        font-size: 45px;
-        color: white;
-    }
-
-    .proyectos-box p {
-        color: white;
-        font-size: 18px;
-        letter-spacing: 0.8px;
-        line-height: 1.5rem;
-        margin: 14px 0 30px 0;
-    }
-
-    .proyectos-box a {
-        background-color: red;
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 2rem;
-        padding: 10px ;
-        background-image: radial-gradient(circle at 50% -20.71%, #ff6dfc 0, #ff67f7 16.67%, #ed5feb 33.33%, #be55d8 50%, #904ac3 66.67%, #6741af 83.33%, #3f399c 100%);
-        
-    }
-
-    .contenedor-proyectos img{
-        width: 300px;
-    }
-</style>
