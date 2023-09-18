@@ -1,32 +1,69 @@
 ---
 import { Image } from 'astro:assets';
 import imagenProyecto from '../assets/img/548shots_so.png'
+import imagenProyecto2 from '../assets/img/project-img2.png'
+import imagenProyecto3 from '../assets/img/project-img3.png'
 ---
 
 <section class="relative bg-[#101010] pb-16">
     <div class="container mx-auto ">
         <div class="flex flex-col items-center ">
-            <div class="bg-[#151515] rounded-[64px] text-center py-[60px] px-[50px] mt-[-60px]">
-                <h2 class="font-bold text-5xl pb-5">Proyectos</h2>
-                <p class="font-semibold text-lg tracking-wide leading-6 mt-3.5 mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, unde.
+            <div class="bg-[#151515] rounded-[64px] text-center py-[60px] px-[50px] mt-[-60px] max-w-[90vw] mx-auto">
+                <h2 class="font-bold text-5xl pb-5 texto-borde">PROYECTOS</h2>
+                <p class="font-semibold text-lg tracking-wide leading-6 mt-1s mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, unde.
                     <br>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, Lorem ipsum dolor sit amet consectetur.
-                </p>                
-                <div class="contenedor-proyectos flex gap-5">
-                    <div>
-                        <Image class='rounded-md max-w-[15px]' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>
-                        <a class="block w-4/5 mx-auto mt-8 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>
+                </p>
+                
+                <div class="contenedor-proyectos flex flex-col items-center lg:grid grid-cols-2 gap-20 xl:grid-cols-3 mt-16">
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>
                     </div>
-                    <div>
-                        <Image class='rounded-md max-w-[15px]' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>  
-                        <a class="block w-4/5 mx-auto mt-8 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>                     
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto2} alt='Imagen sobre el segundo proyecto'/>  
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-white via-blue-500 to-indigo-600" href="">View proyect</a>                     
                     </div>
-                    <div>
-                        <Image class='rounded-md max-w-[15px]' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>
-                        <a class="block w-4/5 mx-auto mt-8 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto3} alt='Imagen sobre el tercer proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-white via-gray-500 to-pink-400" href="">View proyect</a>
                     </div>
-                </div>                
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto} alt='Imagen sobre el cuarto proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>
+                    </div>
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto} alt='Imagen sobre el primer proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>
+                    </div>
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto2} alt='Imagen sobre el segundo proyecto'/>  
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-white via-blue-500 to-indigo-600" href="">View proyect</a>                     
+                    </div>
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto3} alt='Imagen sobre el tercer proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-white via-gray-500 to-pink-400" href="">View proyect</a>
+                    </div>
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto} alt='Imagen sobre el cuarto proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600" href="">View proyect</a>
+                    </div>
+                    <div class=" w-full mb-6">
+                        <Image class='rounded-md w-full mx-auto' src={imagenProyecto3} alt='Imagen sobre el tercer proyecto'/>
+                        <a class="block w-4/5 mx-auto mt-4 p-2.5 uppercase font-bold rounded bg-gradient-to-br from-white via-gray-500 to-pink-400" href="">View proyect</a>
+                    </div>  
+                </div>   
+                    
+                
+                
             </div>            
         </div>
     </div>
 </section>
+
+<style>
+ .texto-borde {
+ -webkit-text-stroke: 2px white;
+ color: transparent; 
+ }
+</style>

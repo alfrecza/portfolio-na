@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import Logo from '../assets/img/naLogo.png'
+import Logo from '../assets/img/logo-na.png'
 ---
 
 <section class="banner">
@@ -8,9 +8,9 @@ import Logo from '../assets/img/naLogo.png'
         <div class="flex flex-col items-center lg:flex-row gap-36">
             <div class="lg:w-3/5">
                 <span class="tagline">Welcome to my PortFolio</span>
-                <h1 class="text-white block">Hi! We are Nico and Alfre. <span>Developers and designers</span></h1>
+                <h1 class="text-white block text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Hi! We are Nico and Alfre. <span>Developers and designers</span></h1>
                 <p class="text-lg text-gray-200 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem nihil. Ipsam ab quis dolores aut sapiente alias voluptates quod consectetur hic consequatur, enim dolor, cupiditate in voluptate nihil obcaecati reiciendis? Consectetur.</p>
-                <button class="font-bold uppercase text-bold text-xl text-white mt-3">Contactanos  --></button>
+                <button class="font-bold uppercase text-bold text-xl text-white mt-6 bg-gradient-to-br from-white via-gray-500 to-pink-400 py-4 px-4 rounded-md">Contactanos  --></button>
             </div>
             <div class="lg:w-2/5">
                 <Image src={Logo} alt='Imagen Logo' class='mx-auto rounded-full logo'/>
@@ -25,7 +25,6 @@ import Logo from '../assets/img/naLogo.png'
     }
 
     .banner h1 {
-        font-size: 65px;
         font-weight: 700;
         letter-spacing: 0.8px;
         line-height: 1;
@@ -45,7 +44,7 @@ import Logo from '../assets/img/naLogo.png'
     }
 
     img {
-        width: 80%;
+        width: 90%;
     }
     
 </style>
